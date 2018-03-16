@@ -1,0 +1,329 @@
+Function: main/0
+Constants: None, 4, 1, 2, 3, "Passed Test 1", 5, "Passed Test 2", 6, 7, 8, 9, "Passed Test 3", "Passed Test 4", "Passed Test 5", "Passed Test 6", 0, "Passed Test 7", "Passed Test 8", "Passed Test 9", 10, "Passed Test 10", "Passed Test 11", "Passed Test 12", "Passed Test 13", "Passed Test 14", "frozenset({1, 2})", "frozenset({2, 1})", "Passed Test 15", "<class 'frozenset'>", "Passed Test 16", "You got", "out of 20."
+Locals: points, s, t, u, tmp, z, lst, i, b
+Globals: frozenset, len, print, union, intersection, copy, difference, symmetric_difference, range, issuperset, isdisjoint, append, repr, type, str
+BEGIN
+          LOAD_CONST                     1
+          STORE_FAST                     0
+          LOAD_GLOBAL                    0
+          LOAD_CONST                     2
+          LOAD_CONST                     3
+          LOAD_CONST                     4
+          LOAD_CONST                     1
+          BUILD_LIST                     4
+          CALL_FUNCTION                  1
+          STORE_FAST                     1
+          LOAD_GLOBAL                    1
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          LOAD_CONST                     1
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label00
+          LOAD_GLOBAL                    2
+          LOAD_CONST                     5
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label00
+label00:  LOAD_CONST                     6
+          LOAD_FAST                      1
+          COMPARE_OP                     7
+          POP_JUMP_IF_FALSE        label01
+          LOAD_GLOBAL                    2
+          LOAD_CONST                     7
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label01
+label01:  LOAD_GLOBAL                    0
+          LOAD_CONST                     1
+          LOAD_CONST                     6
+          LOAD_CONST                     8
+          BUILD_LIST                     3
+          CALL_FUNCTION                  1
+          STORE_FAST                     2
+          LOAD_GLOBAL                    0
+          LOAD_CONST                     9
+          LOAD_CONST                    10
+          LOAD_CONST                    11
+          BUILD_LIST                     3
+          CALL_FUNCTION                  1
+          STORE_FAST                     3
+          LOAD_FAST                      1
+          LOAD_FAST                      2
+          BINARY_OR                
+          LOAD_FAST                      3
+          BINARY_OR                
+          STORE_FAST                     4
+          LOAD_GLOBAL                    1
+          LOAD_FAST                      4
+          CALL_FUNCTION                  1
+          LOAD_CONST                    11
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label02
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    12
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label02
+label02:  LOAD_FAST                      1
+          LOAD_ATTR                      3
+          LOAD_FAST                      2
+          LOAD_FAST                      3
+          CALL_FUNCTION                  2
+          STORE_FAST                     4
+          LOAD_GLOBAL                    1
+          LOAD_FAST                      4
+          CALL_FUNCTION                  1
+          LOAD_CONST                    11
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label03
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    13
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label03
+label03:  LOAD_FAST                      1
+          LOAD_ATTR                      4
+          LOAD_FAST                      2
+          CALL_FUNCTION                  1
+          STORE_FAST                     4
+          LOAD_GLOBAL                    1
+          LOAD_FAST                      4
+          CALL_FUNCTION                  1
+          LOAD_CONST                     2
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label04
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    14
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label04
+label04:  LOAD_FAST                      1
+          LOAD_ATTR                      5
+          CALL_FUNCTION                  0
+          STORE_FAST                     4
+          LOAD_GLOBAL                    1
+          LOAD_FAST                      4
+          CALL_FUNCTION                  1
+          LOAD_CONST                     1
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label05
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    15
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label05
+label05:  LOAD_GLOBAL                    1
+          LOAD_FAST                      1
+          LOAD_ATTR                      6
+          LOAD_FAST                      4
+          CALL_FUNCTION                  1
+          CALL_FUNCTION                  1
+          LOAD_CONST                    16
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label06
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    17
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label06
+label06:  LOAD_GLOBAL                    1
+          LOAD_FAST                      1
+          LOAD_ATTR                      7
+          LOAD_FAST                      2
+          CALL_FUNCTION                  1
+          CALL_FUNCTION                  1
+          LOAD_CONST                     6
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label07
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    18
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label07
+label07:  LOAD_CONST                     1
+          LOAD_FAST                      1
+          COMPARE_OP                     6
+          POP_JUMP_IF_FALSE        label08
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    19
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label08
+label08:  LOAD_GLOBAL                    0
+          LOAD_GLOBAL                    8
+          LOAD_CONST                    20
+          CALL_FUNCTION                  1
+          CALL_FUNCTION                  1
+          STORE_FAST                     5
+          LOAD_FAST                      5
+          LOAD_ATTR                      9
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          POP_JUMP_IF_FALSE        label09
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    21
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label09
+label09:  LOAD_FAST                      1
+          LOAD_ATTR                     10
+          LOAD_FAST                      2
+          CALL_FUNCTION                  1
+          POP_JUMP_IF_TRUE         label10
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    22
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label10
+label10:  LOAD_FAST                      1
+          LOAD_FAST                      5
+          COMPARE_OP                     0
+          POP_JUMP_IF_FALSE        label11
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    23
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label11
+label11:  LOAD_FAST                      5
+          LOAD_FAST                      1
+          COMPARE_OP                     5
+          POP_JUMP_IF_FALSE        label12
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    24
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label12
+label12:  BUILD_LIST                     0
+          STORE_FAST                     6
+          SETUP_LOOP               label15
+          LOAD_FAST                      1
+          GET_ITER                 
+label13:  FOR_ITER                 label14
+          STORE_FAST                     7
+          LOAD_FAST                      6
+          LOAD_ATTR                     11
+          LOAD_FAST                      7
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          JUMP_ABSOLUTE            label13
+label14:  POP_BLOCK                
+label15:  LOAD_GLOBAL                    1
+          LOAD_FAST                      6
+          CALL_FUNCTION                  1
+          LOAD_CONST                     1
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label16
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    25
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label16
+label16:  LOAD_GLOBAL                   12
+          LOAD_GLOBAL                    0
+          LOAD_CONST                     2
+          LOAD_CONST                     3
+          BUILD_LIST                     2
+          CALL_FUNCTION                  1
+          CALL_FUNCTION                  1
+          STORE_FAST                     8
+          LOAD_FAST                      8
+          LOAD_CONST                    26
+          COMPARE_OP                     2
+          POP_JUMP_IF_TRUE         label17
+          LOAD_FAST                      8
+          LOAD_CONST                    27
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label18
+label17:  LOAD_GLOBAL                    2
+          LOAD_CONST                    28
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label18
+label18:  LOAD_GLOBAL                   13
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          STORE_FAST                     2
+          LOAD_GLOBAL                   14
+          LOAD_FAST                      2
+          CALL_FUNCTION                  1
+          LOAD_CONST                    29
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label19
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    30
+          CALL_FUNCTION                  1
+          POP_TOP                  
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          INPLACE_ADD              
+          STORE_FAST                     0
+          JUMP_FORWARD             label19
+label19:  LOAD_GLOBAL                    2
+          LOAD_CONST                    31
+          LOAD_FAST                      0
+          LOAD_CONST                    32
+          CALL_FUNCTION                  3
+          POP_TOP                  
+          LOAD_CONST                     0
+          RETURN_VALUE             
+END

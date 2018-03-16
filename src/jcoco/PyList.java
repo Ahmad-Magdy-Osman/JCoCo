@@ -18,6 +18,7 @@ package jcoco;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import jcoco.PyException.ExceptionType;
 import jcoco.PyType.PyTypeId;
 
@@ -254,6 +255,16 @@ public class PyList extends PyPrimitiveTypeAdapter {
                 }
 
                 return new PyBool(true);
+            }
+        });
+        
+        funs.put("__frozenset__", new PyCallableAdapter(){
+            @Override
+            public PyObject __call__(ArrayList<PyObject> args) {
+                if (args.size() != 1)
+                    throw new PyException(PyException.ExceptionType.PYWRONGARGCOUNTEXCEPTION,
+                            "TypeError: expected 1 arguments, got " + args.size());
+                return new PyFrozenSet(new HashSet(((PyList) args.get(args.size()-1)).data));
             }
         });
 

@@ -57,7 +57,9 @@ public class PyType extends PyCallableAdapter {
         PyModuleType,
         PyMarkerType,
         PyTurtleType,
-        PyTurtleScreenType
+        PyTurtleScreenType,
+        PyFrozenSetType,
+        PyFrozenSetIteratorType
     }
 
     private String typeString;

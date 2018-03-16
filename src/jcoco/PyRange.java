@@ -118,6 +118,20 @@ public class PyRange extends PyPrimitiveTypeAdapter {
                 return new PyList(largs);
             }
         });
+        
+        funs.put("__frozenset__", new PyCallableAdapter() {
+            @Override
+            public PyObject __call__(ArrayList<PyObject> args) {
+                if (args.size() != 1)
+                    throw new PyException(PyException.ExceptionType.PYWRONGARGCOUNTEXCEPTION,
+                            "TypeError: expected 1 argument, got " + args.size());
+                PyRange self = (PyRange) args.get(args.size() - 1);
+                PyList selfList = (PyList) self.callMethod("__list__", selflessArgs(args));
+
+                return selfList.callMethod("__frozenset__", selflessArgs(args));
+            }
+        });
+
 
         return funs;
     }

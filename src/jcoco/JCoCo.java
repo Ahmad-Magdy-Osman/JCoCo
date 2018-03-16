@@ -179,7 +179,15 @@ public class JCoCo {
         
         PyType screenType = new PyType("turtle._Screen", PyTypeId.PyTurtleScreenType);
         PyTypes.put(PyTypeId.PyTurtleScreenType, screenType);
-        screenType.setInstanceFuns(PyTurtleScreen.funs());  
+        screenType.setInstanceFuns(PyTurtleScreen.funs());
+        
+        PyType frozensetType = new PyType("frozenset", PyTypeId.PyFrozenSetType);
+        PyTypes.put(PyTypeId.PyFrozenSetType, frozensetType);
+        frozensetType.setInstanceFuns(PyFrozenSet.funs());
+        
+        PyType frozensetIteratorType = new PyType("frozenset_iterator", PyTypeId.PyFrozenSetIteratorType);
+        PyTypes.put(PyTypeId.PyFrozenSetIteratorType, frozensetIteratorType);
+        frozensetIteratorType.setInstanceFuns(PyFrozenSetIterator.funs()); 
     }
 
     /**
@@ -252,6 +260,7 @@ public class JCoCo {
             globals.put("Exception", PyTypes.get(PyTypeId.PyExceptionTypeId));
             globals.put("super", PyTypes.get(PyTypeId.PySuperTypeId));
             globals.put("open", new PyBuiltInOpen());
+            globals.put("frozenset", PyTypes.get(PyTypeId.PyFrozenSetType));
 
             //These are the modules supplied with JCoCo
             PyObject sys = new PyModuleSys();

@@ -52,7 +52,7 @@ class PyFrame extends PyObjectAdapter {
     private PyStack<Integer> blockStack;
     private final String[] cmp_op = {"__lt__", "__le__", "__eq__", "__ne__", "__gt__", "__ge__",
         "__contains__", "__notin__", "is__", "is_not", "__excmatch",
-        "BAD"};
+        "BAD", "__or__"};
 
     public PyFrame(PyCode code, ArrayList<PyObject> args, HashMap<String, PyObject> globals,
             ArrayList<PyObject> consts, HashMap<String, PyCell> cellvars) {
@@ -726,6 +726,14 @@ class PyFrame extends PyObjectAdapter {
                     case BREAK_POINT:
                         this.printDebuggerPrompt = true;
                         JCoCo.stepOverInstructions = true;
+                        break;
+                    case BINARY_OR:
+                        v = this.safetyPop();
+                        u = this.safetyPop();
+                        args = new ArrayList<PyObject>();
+                        args.add(v);
+                        w = u.callMethod("__or__", args);
+                        this.opStack.push(w);
                         break;
                     default:
                         throw new PyException(ExceptionType.PYILLEGALOPERATIONEXCEPTION, "Unimplemented instruction: " + inst.getOpCodeName());
