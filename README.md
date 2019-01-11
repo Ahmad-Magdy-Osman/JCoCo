@@ -2,7 +2,7 @@
 
 JCoCo is an implementation of the Python Virtual Machine in Java. [Programming Languages](https://github.com/Ahmad-Magdy-Osman/ProgrammingLanguages) class project.
 
-## Implementation of JCoCo FrozenSet Class [JCoCo](https://github.com/kentdlee/JCoCo)
+## Implementation of  [JCoCo](https://github.com/kentdlee/JCoCo) FrozenSet Class
 
 [JCoCo](https://github.com/kentdlee/JCoCo) is an implementation of the Python Virtual Machine in Java. JCoCo is an object-oriented implementation of the Python 3.5 virtual machine.
 
